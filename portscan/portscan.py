@@ -48,11 +48,11 @@ def portscan(host : str, begin_port : int, end_port : int, delay : float):
 
 if (__name__ == "__main__"):
     parser = argparse.ArgumentParser()
-    parser.add_argument("-t", "--target", action="store", dest="target", help="target", default="")
-    parser.add_argument("-b", "--begin", action="store", dest="begin", help="begin port", default="-1")
-    parser.add_argument("-e", "--end", action="store", dest="end", help="end port", default="-1")
-    parser.add_argument("-p", "--port", action="store", dest="port", help="single port scan", default="-1")
-    parser.add_argument("-d", "--delay", action="store", dest="delay", help="max timeout", default="1")
+    parser.add_argument("-t", "--target", action="store", dest="target", help="target", type=str, default="")
+    parser.add_argument("-b", "--begin", action="store", dest="begin", help="begin port", type=int, default="-1")
+    parser.add_argument("-e", "--end", action="store", dest="end", help="end port", type=int, default="-1")
+    parser.add_argument("-p", "--port", action="store", dest="port", help="single port scan", type=int, default="-1")
+    parser.add_argument("-d", "--delay", action="store", dest="delay", help="max timeout", type=float, default="1")
     args = parser.parse_args()
     try:
         host = str(args.target)
