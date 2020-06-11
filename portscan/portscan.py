@@ -42,7 +42,7 @@ def portscan(host : str, begin_port : int, end_port : int, delay : float):
     ecounter = time.perf_counter()
     run_time = round(ecounter - bcounter, 2)
     print("--------------------")
-    print(f"[*] Open ports: {[port for port in open_ports]}")
+    print(f"[*] Open port(s): {[port for port in open_ports]}")
     print(f"[*] Scan finished in {run_time} second(s)")
 
 
