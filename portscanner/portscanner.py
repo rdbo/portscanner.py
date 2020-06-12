@@ -12,15 +12,16 @@ def usage():
     print("-d (--delay) [optional]: specify the max timeout")
 
 def portscan(host : str, begin_port : int, end_port : int, delay : float):
+    sdelay = 0.75
     bcounter = time.perf_counter()
     print("<< portscan.py by rdbo >>")
-    time.sleep(0.75)
+    time.sleep(sdelay)
     print(f"[*] Target: {host}")
-    time.sleep(0.75)
+    time.sleep(sdelay)
     print(f"[*] Scan range: {begin_port}-{end_port}")
-    time.sleep(0.75)
+    time.sleep(sdelay)
     print(f"[*] Max timeout: {delay}")
-    time.sleep(0.75)
+    time.sleep(sdelay)
     print("--------------------")
     time.sleep(0.5)
     open_ports = []
