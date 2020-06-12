@@ -30,6 +30,6 @@ $ python3 portscan.py -t duckduckgo.com -b 440 -e 450
 [*] Scanning port 449...
 [*] Scanning port 450...
 --------------------
-[*] Open ports: [443]
 [*] Scan finished in 10.00 second(s)
+[*] Open ports: [443]
 ```
