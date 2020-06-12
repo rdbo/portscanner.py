@@ -1,4 +1,4 @@
-# portscan.py
+# portscanner.py
 Simple python3 script for port scanning
 ```
 [*] Usage:
